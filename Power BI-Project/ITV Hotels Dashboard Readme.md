@@ -87,7 +87,7 @@ Power BI – Data visualization & dashboard creation
 
 ## 📷 Dashboard Screenshots
 ### Executive Overview
-![Executive Overview]()
+![Executive Overview](https://github.com/anushka-kave/Data-Analysis-Projects/blob/fc76f7b12ae6bd6739c96f4d5500ad8f3f400224/Power%20BI-Project/2025-09-23%20(2).png)
 
 ### Revenue & Occupancy Analysis
 ![Revenue & Occupancy Analysis]()
