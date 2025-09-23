@@ -117,4 +117,4 @@ Highlight top-performing hotels and room types
 ![Revenue & Occupancy Analysis](https://github.com/anushka-kave/Data-Analysis-Projects/blob/ca14180abe7d7dc5a4f9491df26c92dc6314bb78/Power%20BI-Project/2025-09-23.png)
 
 ### Booking Analysis
-![[Booking Analysis](https://github.com/anushka-kave/Data-Analysis-Projects/blob/dff5a09ff3573a542821167227142d25125ef1c4/Power%20BI-Project/2025-09-23%20(3).png)
+![Booking Analysis](https://github.com/anushka-kave/Data-Analysis-Projects/blob/dff5a09ff3573a542821167227142d25125ef1c4/Power%20BI-Project/2025-09-23%20(3).png)
