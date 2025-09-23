@@ -1,88 +1,112 @@
-🏨 ITV Hotels Dashboard (Power BI)
-
+🏨 Hotel Booking Analytics Dashboard
 📌 Project Overview
 
-The ITV Hotels Dashboard is an interactive Power BI dashboard designed to analyze the overall performance of ITV Hotels across different cities, properties, and customer segments. It helps stakeholders track financial, operational, and customer insights in a single view.
+This project analyzes hotel booking data to provide insights into performance across multiple hotels, room types, and time periods. Using Power BI, the data model was built from four key tables:
 
-The dashboard is structured into three sections:
+fact_aggregated_bookings → Bookings, revenue, check-ins, check-outs, rooms available
 
-Business Overview
+dim_hotels → Hotel details (name, category/star rating, region/city)
 
-Hotel Performance
+dim_rooms → Room type, room capacity
 
-Room & Customer Insights
+dim_date → Date hierarchy (day, month, quarter, year)
 
-📊 KPIs (Key Performance Indicators)
-🔹 Business Overview
+The goal is to provide executives, managers, and analysts with a 360° view of booking performance, identify key trends, and highlight opportunities to improve occupancy, revenue, and customer experience.
 
-₹ 2.01B – Total Generated Revenue
+🎯 Key KPIs
 
-₹ 1.71B – Total Revenue Realized
+Total Bookings → Number of reservations made
 
-135K – Total Bookings
+Total Revenue → Income generated from bookings
 
-94K – Total Successful Bookings
+Total Rooms Available → Room nights available across hotels
 
-3.62 – Average Rating
+Occupancy % → % of rooms booked vs available
 
-🔹 Hotel Performance
+ADR (Average Daily Rate) → Revenue per booking
 
-40.59% – Occupancy Rate
+RevPAR (Revenue per Available Room) → Revenue per available room
 
-24.83% – Cancellation Rate
+Total Check-ins → Number of guests who checked in
 
-2.37 – Average Stay (in days)
+Total Check-outs → Number of guests who checked out
 
-₹ 12.7K – ADR (Average Daily Rate)
+Cancellation Rate (%) → Estimated % of bookings not realized (derived from Bookings – Check-ins)
 
-$7.35K – Avg. Revenue per Overall Room
+YoY Revenue Growth % → Growth compared to same period last year
 
-🔹 Room & Customer Insights
+📊 Dashboard Visuals
+1. Executive Overview
 
-3.71 – Avg. Lead Time (in days)
+KPI Cards → Revenue, Bookings, Occupancy, RevPAR, Cancellations
 
-2.04 – Avg. Guests per Booking
+Line Chart → Revenue trend (Month/Year)
 
-135K – Room Booking Count
+Bar Chart → Revenue by hotel category (Star Rating)
 
-62.68% – Weekday Booking %
+Map → Revenue distribution by region/city
 
-W 24 – Peak Booking Week
+Gauge → Cancellation %
 
-📈 Visuals & Insights
-1️⃣ Executive Overview
+2. Booking Analysis
 
-Total Bookings by Booking Platform – "Others" lead with 55K, followed by MakeMyTrip (27K), LogTrip (15K), Direct Corporate (13K), Tripster (10K), Journey (8K), Direct Online (7K).
+Donut Chart → Booking share by room type
 
-Total Revenue Realized by City – Mumbai (₹0.67B) > Bangalore (₹0.42B) > Hyderabad (₹0.33B) > Delhi (₹0.29B).
+Line Chart → Booking trend over time (Month/Year)
 
-Occupancy Rate % by City – Delhi (42.42%) > Hyderabad (40.84%) > Mumbai (40.65%) > Bangalore (38.99%).
+Column Chart → Bookings by hotel
 
-Total Revenue Realized by Category (Pie Chart) – Luxury (61.61%, ₹1.05B) > Business (38.39%, ₹0.66B).
+Heatmap (Matrix) → Bookings by month and hotel
 
-2️⃣ Revenue & Occupancy Analysis
+3. Revenue & Occupancy Analysis
 
-Bookings per Hotel by Property Name – ITV Palace (24K) > ITV Exotica (23K) = ITV City (23K) > ITV Grands (17K) > ITV Seasons (4K).
+Combo Chart (Line + Column) → Revenue vs Occupancy % trend
 
-Count of Booking ID by Property & Status (Stacked Bar) – Shows distribution across Cancelled, Checked Out, No Show.
+Column Chart → ADR by hotel
 
-ADR by Category (Pie Chart) – Luxury (₹12.88K, 50.58%) > Business (₹12.58K, 49.42%).
+Line Chart → YoY revenue growth %
 
-Occupancy Rate % by Property Name (Line Chart) – ITV Palace (41.98%) > ITV City (41.76%) > ITV Exotica (40.44%) > ITV Grands (36.79%) > ITV Seasons (31.50%).
+Bar Chart → Top 5 hotels by revenue
 
-3️⃣ Booking Analysis
+4. Cancellations & Checkouts
 
-Total Bookings by Room Class – Elite > Standard > Premium > Presidential.
+Column Chart → Cancellation Rate by hotel
 
-Total Bookings by Week No (Line Chart) – Consistent trend across weeks with a dip in Week 32.
+Line Chart → Cancellations over time
 
-Total Bookings by Date (Time Series) – Shows demand pattern from May–July 2022 with weekly peaks.
+Card → Total Check-outs
 
-Count of Booking ID by Day Type (Pie Chart) – Weekdays (62.68%) > Weekends (37.32%).
+Table → Bookings, Check-ins, Check-outs comparison
 
-🛠️ Tools & Technologies
+5. Filters / Slicers
 
-Power BI – Data visualization & dashboard creation
+Hotel
+
+Room Type
+
+Date Range (Year/Month)
+
+Region/City
+
+🚀 Tools Used
+
+Power BI → Data modeling, DAX measures, dashboard building
+
+DAX → Custom measures (Revenue, Occupancy %, ADR, RevPAR, Cancellations, YoY Growth)
+
+SQL/Excel → Data preparation (if needed)
+
+✅ Insights Expected
+
+Identify peak booking periods and seasonality
+
+Compare performance across hotel categories and locations
+
+Track occupancy and revenue efficiency (RevPAR, ADR)
+
+Monitor cancellations and their financial impact
+
+Highlight top-performing hotels and room types
 
 
 ## 📷 Dashboard Screenshots
@@ -93,4 +117,4 @@ Power BI – Data visualization & dashboard creation
 ![Revenue & Occupancy Analysis](https://github.com/anushka-kave/Data-Analysis-Projects/blob/ca14180abe7d7dc5a4f9491df26c92dc6314bb78/Power%20BI-Project/2025-09-23.png)
 
 ### Booking Analysis
-![[Booking Analysis]()
+![[Booking Analysis](https://github.com/anushka-kave/Data-Analysis-Projects/blob/dff5a09ff3573a542821167227142d25125ef1c4/Power%20BI-Project/2025-09-23%20(3).png)
